@@ -12,12 +12,12 @@
 
 body {
   margin: 0px;
+  padding: 30px 100px 0px 100px;
 }
 
 div.header-container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 100px 0px 100px;
 }
 
 div.header-container-one {
@@ -54,4 +54,9 @@ div.header-container-two {
 
 .profile-icon > img {
   width: 40px;
+}
+
+hr {
+  margin-top: 25px;
+  opacity: 0.2;
 }
