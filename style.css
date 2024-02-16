@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --import-font-family: "Kumbh Sans";
+  --system-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  margin: 0px;
+}
+
+div.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px 0px 100px;
+}
+
+div.header-container-one {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+ul.header-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  font-size: 17px;
+  font-family: var(--import-font-family);
+}
+
+div.header-container-two {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cart-icon,
+.profile-icon {
+  cursor: pointer;
+}
+
+.profile-icon > img {
+  width: 40px;
+}
