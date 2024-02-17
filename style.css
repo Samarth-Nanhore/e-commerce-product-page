@@ -60,3 +60,30 @@ hr {
   margin-top: 25px;
   opacity: 0.2;
 }
+
+.product-img {
+  width: fit-content;
+}
+
+.product-img > img {
+  width: 450px;
+  border-radius: 18px;
+}
+
+div.img-container {
+  width: fit-content;
+  display: grid;
+  row-gap: 30px;
+}
+
+div.products-img-thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.products-img-thumbnails > img {
+  width: 89px;
+  border-radius: 11px;
+}
