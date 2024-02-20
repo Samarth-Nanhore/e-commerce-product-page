@@ -8,6 +8,7 @@
   --import-font-family: "Kumbh Sans";
   --system-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --dark-grayish-blue: hsl(219, 9%, 45%);
 }
 
 body {
@@ -36,7 +37,7 @@ ul.header-links {
 
 a {
   text-decoration: none;
-  color: hsl(219, 9%, 45%);
+  color: var(--dark-grayish-blue);
   font-size: 17px;
   font-family: var(--import-font-family);
 }
