@@ -89,3 +89,74 @@ div.products-img-thumbnails {
   width: 89px;
   border-radius: 11px;
 }
+
+div.info-container {
+  width: fit-content;
+}
+
+div.container-one {
+  display: grid;
+  row-gap: 8px;
+}
+
+div.container-one h4 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: hsl(26, 100%, 55%);
+}
+
+div.container-one h1 {
+  margin: 0px;
+  width: 400px;
+}
+
+div.container-two {
+  /* about to add */
+}
+
+p.product-detail {
+  margin: 0;
+  width: 500px;
+  color: hsl(219, 9%, 45%);
+}
+
+div.product-price {
+  display: grid;
+  grid-gap: 10px;
+}
+
+div.product-price div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+div.product-price div:nth-child(1) > p:nth-child(1) {
+  margin: 0px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+div.product-price div:nth-child(1) > p:nth-child(2) {
+  margin: 0px;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 45px;
+  height: 23px;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+}
+
+div.product-price div:nth-child(2) > p {
+  margin: 0px;
+  font-size: 15px;
+  text-decoration: line-through;
+  font-weight: 400;
+  color: hsl(219, 9%, 45%);
+}
