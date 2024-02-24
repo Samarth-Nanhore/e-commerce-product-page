@@ -15,6 +15,7 @@ body {
   margin: 0px;
   padding: 30px 100px 0px 100px;
   font-family: var(--import-font-family);
+  max-height: 100vh;
 }
 
 div.header-container {
@@ -112,13 +113,16 @@ div.container-one h1 {
 }
 
 div.container-two {
-  /* about to add */
+  margin-top: 35px;
+  display: grid;
+  row-gap: 25px;
 }
 
 p.product-detail {
   margin: 0;
   width: 500px;
   color: hsl(219, 9%, 45%);
+  line-height: 28px;
 }
 
 div.product-price {
@@ -159,4 +163,17 @@ div.product-price div:nth-child(2) > p {
   text-decoration: line-through;
   font-weight: 400;
   color: hsl(219, 9%, 45%);
+}
+
+div.content-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  padding-top: 80px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+div.info-container {
+  margin-top: 58px;
 }
