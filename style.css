@@ -177,3 +177,29 @@ div.content-container {
 div.info-container {
   margin-top: 58px;
 }
+
+div.container-three {
+  margin-top: 35px;
+}
+
+div.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  padding: 12px 17px 12px 17px;
+  border-radius: 8px;
+  background: hsl(223, 64%, 98%);
+}
+
+p.quantity-value {
+  margin: 0px;
+}
+
+img.minus-btn {
+  cursor: pointer;
+}
+
+img.plus-btn {
+  cursor: pointer;
+}
