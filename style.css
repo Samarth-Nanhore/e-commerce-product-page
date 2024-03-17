@@ -59,6 +59,11 @@ div.header-container-two {
   width: 40px;
 }
 
+.profile-icon > img:hover{
+  border: 2px solid tomato;
+  border-radius: 20px;
+}
+
 hr {
   margin-top: 25px;
   opacity: 0.2;
