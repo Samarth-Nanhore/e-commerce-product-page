@@ -1,4 +1,5 @@
 const quantityIncrementBtn = document.querySelector("img.plus-btn");
+const quantityDecrementBtn = document.querySelector("img.minus-btn");
 const quantityValueElement = document.querySelector("p.quantity-value");
 
 quantityIncrementBtn.addEventListener("click", incrementProductQuantity);
@@ -25,7 +26,24 @@ function changeBtnStyle(quantityValue) {
   // this function change style of quantity btn only
   if (quantityValue === 5) {
     quantityIncrementBtn.style.cssText = "cursor: not-allowed; ";
-  } else if (quantityValue < 5) {
-    quantityIncrementBtn.string.cssText = "cursor: pointer;";
+  } else if (quantityValue === 1) {
+    quantityDecrementBtn.style.cssText = "cursor: not-allowed; ";
+  } else if (quantityValue < 5 && quantityValue > 1) {
+    quantityIncrementBtn.style.cssText = "cursor: pointer;";
+    quantityDecrementBtn.style.cssText = "cursor: pointer;";
   }
+}
+
+quantityDecrementBtn.addEventListener("click", decrementProductQuantity);
+
+function decrementProductQuantity() {
+  let quantityValue = convertTextContentToNumber(
+    quantityValueElement.textContent
+  );
+
+  if (quantityValue > 1) {
+    let subOne = quantityValue - 1;
+    quantityValueElement.textContent = `${subOne}`;
+  }
+  changeBtnStyle(quantityValue);
 }
