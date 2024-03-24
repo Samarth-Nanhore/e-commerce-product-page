@@ -59,7 +59,7 @@ div.header-container-two {
   width: 40px;
 }
 
-.profile-icon > img:hover{
+.profile-icon > img:hover {
   border: 2px solid tomato;
   border-radius: 20px;
 }
@@ -185,6 +185,8 @@ div.info-container {
 
 div.container-three {
   margin-top: 35px;
+  display: flex;
+  gap: 25px;
 }
 
 div.quantity-container {
@@ -207,4 +209,23 @@ img.minus-btn {
 
 img.plus-btn {
   cursor: pointer;
+}
+
+div.addToCartBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  gap: 10px;
+  border-radius: 9px;
+  background-color: hsl(26, 100%, 55%);
+  cursor: pointer;
+  box-shadow: 0px 47px 50px -19px hsl(26, 100%, 55%);
+}
+
+div.addToCartBtn > p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
 }
