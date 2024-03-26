@@ -57,7 +57,9 @@ const addToCartBtnElement = document.querySelector("div.addToCartBtn");
 
 addToCartBtnElement.addEventListener("click", addItemToCart);
 
-function addItemToCart() {}
+function addItemToCart() {
+  addNotifyToCartIcon();
+}
 
 function addNotifyToCartIcon() {
   let quantityValue = convertTextContentToNumber(
