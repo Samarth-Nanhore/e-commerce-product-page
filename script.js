@@ -1,3 +1,5 @@
+// Product Quantity Functionalities
+
 const quantityIncrementBtn = document.querySelector("img.plus-btn");
 const quantityDecrementBtn = document.querySelector("img.minus-btn");
 const quantityValueElement = document.querySelector("p.quantity-value");
@@ -47,3 +49,8 @@ function decrementProductQuantity() {
   }
   changeBtnStyle(quantityValue);
 }
+
+// Add To Cart Functionalities
+
+const cartIconElement = document.querySelector("div.cart-icon");
+const addToCartBtnElement = document.querySelector("div.addToCartBtn");
