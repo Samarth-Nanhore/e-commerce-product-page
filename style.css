@@ -233,3 +233,20 @@ div.addToCartBtn > p {
 div.cart-icon {
   position: relative;
 }
+
+div.notification {
+  position: absolute;
+  width: 1.5rem;
+  border-radius: 13px;
+  text-align: center;
+  background-color: hsl(26, 100%, 55%);
+  bottom: 16px;
+  left: 8px;
+}
+
+div.notification > p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
