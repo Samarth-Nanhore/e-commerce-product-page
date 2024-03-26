@@ -229,3 +229,7 @@ div.addToCartBtn > p {
   font-weight: 600;
   color: white;
 }
+
+div.cart-icon {
+  position: relative;
+}
