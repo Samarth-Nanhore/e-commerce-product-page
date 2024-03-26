@@ -65,4 +65,8 @@ function addNotifyToCartIcon() {
   );
   let newDivElement = document.createElement("div");
   let newParagraphElement = document.createElement("p");
+  newParagraphElement.innerText = `${quantityValue}`;
+  newDivElement.appendChild(newParagraphElement);
+  newDivElement.classList.add("notification");
+  cartIconElement.appendChild(newDivElement);
 }
