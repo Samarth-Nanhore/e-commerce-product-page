@@ -58,3 +58,11 @@ const addToCartBtnElement = document.querySelector("div.addToCartBtn");
 addToCartBtnElement.addEventListener("click", addItemToCart);
 
 function addItemToCart() {}
+
+function addNotifyToCartIcon() {
+  let quantityValue = convertTextContentToNumber(
+    quantityValueElement.textContent
+  );
+  let newDivElement = document.createElement("div");
+  let newParagraphElement = document.createElement("p");
+}
