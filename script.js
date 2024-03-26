@@ -1,4 +1,4 @@
-// Product Quantity Functionalities
+// Item Quantity Functionalities
 
 const quantityIncrementBtn = document.querySelector("img.plus-btn");
 const quantityDecrementBtn = document.querySelector("img.minus-btn");
@@ -54,3 +54,7 @@ function decrementProductQuantity() {
 
 const cartIconElement = document.querySelector("div.cart-icon");
 const addToCartBtnElement = document.querySelector("div.addToCartBtn");
+
+addToCartBtnElement.addEventListener("click", addItemToCart);
+
+function addItemToCart() {}
