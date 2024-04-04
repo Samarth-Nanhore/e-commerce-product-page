@@ -72,3 +72,7 @@ function addNotifyToCartIcon() {
   newDivElement.classList.add("notification");
   cartIconElement.appendChild(newDivElement);
 }
+
+// cart-icon event
+
+cartIconElement.addEventListener("click");
