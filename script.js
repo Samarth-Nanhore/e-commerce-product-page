@@ -76,3 +76,28 @@ function addNotifyToCartIcon() {
 // cart-icon event
 
 cartIconElement.addEventListener("click");
+
+let cartInfoDivEle; // imp space to update Cart UI state
+let emptyCartTitleElement;
+
+function addCartUI() {
+  let cartContainerDivEle = document.createElement("div");
+  cartContainerDivEle.classList.add("cart-container");
+
+  let cartTitleDivEle = document.createElement("div");
+  let cartTitle = document.createElement("p");
+  cartTitle.innerText = "Cart";
+  let newHrElement = document.createElement("hr");
+  cartTitleDivEle.appendChild(cartTitle);
+  cartTitleDivEle.appendChild(newHrElement);
+
+  cartInfoDivEle = document.createElement("div");
+  emptyCartTitleElement = document.createElement("p");
+  emptyCartTitleElement.innerText = "Your cart is empty.";
+  cartInfoDivEle.appendChild(emptyCartTitleElement);
+
+  cartContainerDivEle.appendChild(cartTitleDivEle);
+  cartContainerDivEle.appendChild(cartInfoDivEle);
+
+  cartIconElement.appendChild(cartContainerDivEle);
+}
