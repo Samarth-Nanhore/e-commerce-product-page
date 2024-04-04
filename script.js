@@ -75,7 +75,7 @@ function addNotifyToCartIcon() {
 
 // cart-icon event
 
-cartIconElement.addEventListener("click");
+cartIconElement.addEventListener("click", addCartUI);
 
 let cartInfoDivEle; // imp space to update Cart UI state
 let emptyCartTitleElement;
